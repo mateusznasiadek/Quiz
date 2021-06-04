@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue">
+
+
+        <ImageView
+            android:id="@+id/scoreBackground"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="@dimen/question_margin"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/question_margin"
+            android:layout_marginBottom="@dimen/question_margin"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toTopOf="@id/playAgainBTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/question_margin"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textColor="@color/dark_blue"
+            android:textSize="@dimen/info_text_size"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@id/scoreValueTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/scoreBackground" />
+
+        <TextView
+            android:id="@+id/scoreValueTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/question_margin"
+            android:gravity="center"
+            android:maxLines="3"
+            android:padding="@dimen/question_padding"
+            android:text="@string/score_points"
+            android:textColor="@color/black"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@id/scoreBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scoreTV" />
+
+        <Button
+            android:id="@+id/playAgainBTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/answer_horizontal_margin"
+            android:layout_marginTop="@dimen/question_margin"
+            android:layout_marginEnd="@dimen/answer_horizontal_margin"
+            android:layout_marginBottom="@dimen/question_margin"
+            android:background="@drawable/rectangle"
+            android:maxLines="2"
+            android:padding="@dimen/answer_padding"
+            android:text="@string/play_again"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/question_text_size"
+            android:textStyle="bold|italic"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scoreBackground" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

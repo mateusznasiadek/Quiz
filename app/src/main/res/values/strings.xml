@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <string name="title">MythologicQUIZ</string>
+    <string name="start">Start</string>
+
+    <string name="question1">Pytanie 1</string>
+    <string name="question1_content">W mitologii greckiej Polifem był:</string>
+    <string name="answer1">Sturękim</string>
+    <string name="answer2">Cyklopem</string>
+    <string name="answer3">Herosem</string>
+
+    <string name="question2">Pytanie 2</string>
+    <string name="question2_content">W mitologii rzymskiej Janus był tradycyjnie przedstawiany z:</string>
+    <string name="answer4">Dwiema twarzami</string>
+    <string name="answer5">Przepaską na oczach</string>
+    <string name="answer6">Orłem na ramieniu</string>
+
+    <string name="question3">Pytanie 3</string>
+    <string name="question3_content">W mitologii nordyckiej Baldur zginął od strzały wykonanej z:</string>
+    <string name="answer7">Pokrzywy</string>
+    <string name="answer8">Róży</string>
+    <string name="answer9">Jemioły</string>
+
+    <string name="score">Wynik</string>
+    <string name="score_points">%1$d/3</string>
+    <string name="play_again">Spróbuj ponownie</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle"
+            android:padding="15dp"
+            android:text="@string/title"
+            android:textColor="@color/dark_blue"
+            android:textSize="45sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@id/startBTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rectangle"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold|italic"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
